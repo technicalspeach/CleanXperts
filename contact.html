@@ -34,20 +34,72 @@
         <p style="margin: 10px 0 0 0; color: #4b5563; font-size: 16px;">Get a free instant quotation or book your slot today</p>
     </section>
 
-    <!-- CONTENT SECTION -->
-    <main style="max-width: 600px; margin: 0 auto; padding: 40px 20px; flex-grow: 1; width: 100%; box-sizing: border-box;">
-        <div style="background-color: white; border-radius: 12px; border: 1px solid #e5e7eb; padding: 35px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); text-align: center;">
-            <h2 style="margin: 0 0 25px 0; font-size: 24px; color: #1e3a8a;">Quick Booking Channels</h2>
+    <!-- CONTENT SECTION (Two-Column Layout) -->
+    <main style="max-width: 1100px; margin: 40px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 40px; box-sizing: border-box; justify-content: center;">
+        
+        <!-- Left Side: Contact Details -->
+        <div style="flex: 1; min-width: 300px; background-color: white; border-radius: 12px; border: 1px solid #e5e7eb; padding: 35px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-size: 12px; font-weight: bold; color: #2563eb; text-transform: uppercase; letter-spacing: 1px;">— Contact Info</p>
+            <h2 style="margin: 10px 0 15px 0; font-size: 28px; color: #1e3a8a; font-weight: bold;">Contact Details</h2>
+            <p style="color: #6b7280; font-size: 15px; line-height: 1.6; margin-bottom: 35px;">We really appreciate you taking the time to get in touch. Please fill out the form or reach us via our channels.</p>
             
-            <div style="margin-bottom: 25px; padding: 15px; background-color: #eff6ff; border-radius: 8px; border: 1px dashed #bfdbfe;">
-                <p style="margin: 0 0 5px 0; font-weight: bold; color: #1e3a8a; font-size: 14px; text-transform: uppercase;">Direct Phone Line</p>
-                <a href="tel:+923332055383" style="font-size: 22px; font-weight: bold; color: #111827; text-decoration: none;">+92 333 2055383</a>
+            <!-- Address -->
+            <div style="margin-bottom: 25px;">
+                <p style="margin: 0 0 5px 0; font-weight: bold; color: #1e3a8a; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">📍 Address:</p>
+                <p style="margin: 0; font-size: 16px; font-weight: 600; color: #1f2937;">House no R-102, Sec 15A/5, Bufferzone, Karachi</p>
             </div>
 
-            <div style="margin-bottom: 25px; padding: 15px; background-color: #ecfdf5; border-radius: 8px; border: 1px dashed #a7f3d0;">
-                <p style="margin: 0 0 5px 0; font-weight: bold; color: #065f46; font-size: 14px; text-transform: uppercase;">24/7 WhatsApp Support</p>
-                <a href="https://wa.me" target="_blank" style="font-size: 22px; font-weight: bold; color: #047857; text-decoration: none;">0333-2055383</a>
+            <!-- Phone -->
+            <div style="margin-bottom: 25px;">
+                <p style="margin: 0 0 5px 0; font-weight: bold; color: #1e3a8a; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">📞 Phone Number:</p>
+                <a href="tel:+923332055383" style="font-size: 16px; font-weight: 600; color: #1f2937; text-decoration: none; hover:underline;">+92 333 2055383</a>
             </div>
+
+            <!-- Email -->
+            <div>
+                <p style="margin: 0 0 5px 0; font-weight: bold; color: #1e3a8a; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;">✉️ E-mail:</p>
+                <a href="mailto:info@cleanxperts.pk" style="font-size: 16px; font-weight: 600; color: #1f2937; text-decoration: none;">info@cleanxperts.pk</a>
+            </div>
+        </div>
+
+        <!-- Right Side: Request A Call Back Form -->
+        <div style="flex: 1.2; min-width: 320px; background-color: white; border-radius: 12px; border: 1px solid #e5e7eb; padding: 35px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
+            <h2 style="margin: 0 0 25px 0; font-size: 28px; color: #1e3a8a; font-weight: bold;">Request A Call Back</h2>
+            
+            <!-- DATABASE INTEGRATION FORM -->
+            <!-- Apni unique Formspree ID milne par 'YOUR_FORMSPREE_ID' ko usse badlein -->
+            <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+                
+                <!-- Row 1: Name and Phone Input -->
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 8px;">
+                        <label style="font-weight: 600; color: #4b5563; font-size: 14px;">Your Name:</label>
+                        <input type="text" name="name" required style="padding: 12px 15px; border: 1px solid #d1d5db; border-radius: 50px; font-size: 15px; outline: none; background-color: #f9fafb;">
+                    </div>
+                    <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 8px;">
+                        <label style="font-weight: 600; color: #4b5563; font-size: 14px;">Phone Number:</label>
+                        <input type="tel" name="phone" required style="padding: 12px 15px; border: 1px solid #d1d5db; border-radius: 50px; font-size: 15px; outline: none; background-color: #f9fafb;">
+                    </div>
+                </div>
+
+                <!-- Row 2: Service Selection Dropdown -->
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <label style="font-weight: 600; color: #4b5563; font-size: 14px;">Your Service Request:</label>
+                    <select name="service" style="padding: 12px 15px; border: 1px solid #d1d5db; border-radius: 50px; font-size: 15px; outline: none; background-color: #f9fafb; appearance: none; cursor: pointer;">
+                        <option value="Residential Deep Cleaning">Residential Deep Cleaning</option>
+                        <option value="Sofa & Upholstery Shampooing">Sofa & Upholstery Shampooing</option>
+                        <option value="Corporate Office Maintenance">Corporate Office Maintenance</option>
+                        <option value="General Query">General Query / Other</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" style="margin-top: 15px; background-color: #38bdf8; color: white; border: none; padding: 14px; font-size: 16px; font-weight: bold; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.2); transition: background-color 0.2s;" onmouseover="this.style.backgroundColor='#0ea5e9'" onmouseout="this.style.backgroundColor='#38bdf8'">
+                    Send Request
+                </button>
+            </form>
+        </div>
+    </main>
 
             <!-- NEW ADDRESS BOX -->
             <div style="margin-bottom: 30px; padding: 15px; background-color: #f9fafb; border-radius: 8px; border: 1px dashed #d1d5db;">
